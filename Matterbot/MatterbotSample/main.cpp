@@ -4,6 +4,12 @@
 #include "ConsoleLogger.h"
 #include "EchoCommand.h"
 #include "ReverseCommand.h"
+#include "WeatherCommand.h"
+#include "JokesCommand.h"
+#include "RivestmentCommands.h"
+#include "RivestmentGetChallenges.h"
+#include "Md5.h"
+#include "Md5Utilities.h"
 
 #define ERROR_SUCCESS 0
 #define ERROR_FAILURE -1
@@ -13,16 +19,21 @@ using namespace lospi;
 
 int main() {
   wstring mattermost_url = L"https://hooks.slack.com",
-    incoming_hook_route = L"services/AAAAAAA/BBBBBBBBB/CCCCCCCCCCCCCCCCCCCC",
-    outgoing_hook_route = L"http://127.0.0.1:8000/",
-    outgoing_hook_token = L"XXXXXXXXXXXXXXXXXXXXX",
+    incoming_hook_route = L"services/T4Z1QAKSS/B50N1HNQ7/w1d44getQsNq2zrlRPzD8Adp",
+    outgoing_hook_route = L"http://127.0.0.1:2000/",
+    outgoing_hook_token = L"XoLaKLa4THaZgv1nJNwMw33j",
     welcome_message = L"bot is running.";
 
   try {
     auto bot = make_shared<Matterbot>(mattermost_url, incoming_hook_route, outgoing_hook_route, outgoing_hook_token);
     bot->set_logger(make_unique<ConsoleLogger>());
-    bot->register_command(make_shared<EchoCommand>());
-    bot->register_command(make_shared<ReverseCommand>(bot));
+	bot->register_command(make_shared<JokesCommand>());
+    bot->register_command(make_shared<RivestmentCommands>());
+	bot->register_command(make_shared<RivestmentGetChallanges>());
+	//bot->register_command(make_shared<ReverseCommand>(bot));
+	//bot->register_command(make_shared<EchoCommand>());
+	//bot->register_command(make_shared<WeatherCommand>());
+
     bot->post_message(welcome_message);
 
     wstring console;

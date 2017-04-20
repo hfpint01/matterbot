@@ -22,7 +22,7 @@
     <ProjectGuid>{0D17CE9B-1602-460A-9380-D954CCF1969F}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>MatterbotSample</RootNamespace>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -160,6 +160,8 @@
   <ItemGroup>
     <ClCompile Include="ConsoleLogger.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Md5.cpp" />
+    <ClCompile Include="Md5Utilities.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Matterbot\Matterbot.vcxproj">
@@ -169,7 +171,14 @@
   <ItemGroup>
     <ClInclude Include="EchoCommand.h" />
     <ClInclude Include="ConsoleLogger.h" />
+    <ClInclude Include="JokesCommand.h" />
+    <ClInclude Include="KnockKnock.h" />
+    <ClInclude Include="Md5.h" />
+    <ClInclude Include="Md5Utilities.h" />
     <ClInclude Include="ReverseCommand.h" />
+    <ClInclude Include="RivestmentGetChallenges.h" />
+    <ClInclude Include="RivestmentCommands.h" />
+    <ClInclude Include="WeatherCommand.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

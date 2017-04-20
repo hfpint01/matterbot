@@ -22,7 +22,7 @@
     <ProjectGuid>{09DC1DE3-3212-4ADE-8C51-836AF911ACA5}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Matterbot</RootNamespace>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -162,11 +162,17 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
     <Import Project="..\packages\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.2.9.1\build\native\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.targets" Condition="Exists('..\packages\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.2.9.1\build\native\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.targets')" />
+    <Import Project="..\packages\boost.1.55.0.16\build\native\boost.targets" Condition="Exists('..\packages\boost.1.55.0.16\build\native\boost.targets')" />
+    <Import Project="..\packages\boost_atomic-android.1.55.0.2\build\native\boost_atomic-android.targets" Condition="Exists('..\packages\boost_atomic-android.1.55.0.2\build\native\boost_atomic-android.targets')" />
+    <Import Project="..\packages\boost_chrono-android.1.55.0.2\build\native\boost_chrono-android.targets" Condition="Exists('..\packages\boost_chrono-android.1.55.0.2\build\native\boost_chrono-android.targets')" />
   </ImportGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.2.9.1\build\native\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.2.9.1\build\native\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.targets'))" />
+    <Error Condition="!Exists('..\packages\boost.1.55.0.16\build\native\boost.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\boost.1.55.0.16\build\native\boost.targets'))" />
+    <Error Condition="!Exists('..\packages\boost_atomic-android.1.55.0.2\build\native\boost_atomic-android.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\boost_atomic-android.1.55.0.2\build\native\boost_atomic-android.targets'))" />
+    <Error Condition="!Exists('..\packages\boost_chrono-android.1.55.0.2\build\native\boost_chrono-android.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\boost_chrono-android.1.55.0.2\build\native\boost_chrono-android.targets'))" />
   </Target>
 </Project>
