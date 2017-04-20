@@ -29,14 +29,7 @@ namespace lospi
 			{
 				challenges.push_back(item);
 			}
-			int i{ 0 };
-
-			while (challenges[i] != "\0")
-			{
-				std::cout << "element in array: " << challenges[i] << "\n";
-				i++;
-			}
-			return L"MD5's captured.";
+			return L"yay";
 			
 		}
 	};

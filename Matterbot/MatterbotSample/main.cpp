@@ -10,6 +10,7 @@
 #include "RivestmentGetChallenges.h"
 #include "Md5.h"
 #include "Md5Utilities.h"
+#include "ConvertToMd5.h"
 
 #define ERROR_SUCCESS 0
 #define ERROR_FAILURE -1
@@ -30,6 +31,7 @@ int main() {
 	bot->register_command(make_shared<JokesCommand>());
     bot->register_command(make_shared<RivestmentCommands>());
 	bot->register_command(make_shared<RivestmentGetChallanges>());
+	bot->register_command(make_shared<ConvertToMd5>());
 	//bot->register_command(make_shared<ReverseCommand>(bot));
 	//bot->register_command(make_shared<EchoCommand>());
 	//bot->register_command(make_shared<WeatherCommand>());
