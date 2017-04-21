@@ -10,7 +10,7 @@ namespace lospi
 		}
 
 		std::wstring get_help() override {
-			return L"`rivestment register [name]`: This will register you as the user name you provide.";
+			return L"`rivestment commands`";
 		}
 
 		std::wstring handle_command(const std::wstring &team, const std::wstring &channel,
@@ -23,6 +23,10 @@ namespace lospi
 			else if (command_text == L"challenge")
 			{
 				return L"rivestment challenge";
+			}
+			else if (command_text == L"password")
+			{
+				return L"rivestment password";
 			}
 			else if (command_text == L"quit")
 			{
