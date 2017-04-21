@@ -55,7 +55,6 @@ int main()
 		{
 			auto combo = c.next();
 			copy(myPwd.begin(), myPwd.end(), back_inserter(password));
-			//std::string password(combo.data() + myPwd);
 			theMap.emplace(compute_md5(password.c_str(), password.size()), combo);
 		}
 	}

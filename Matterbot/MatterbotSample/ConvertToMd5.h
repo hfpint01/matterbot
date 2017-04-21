@@ -19,24 +19,24 @@ namespace lospi
 
 		std::wstring handle_command(const std::wstring &team, const std::wstring &channel,
 			const std::wstring &user, const std::wstring &command_text) override {
-			std::map<Md5Digest, std::vector<char>> * create_table();
+			//std::map<Md5Digest, std::vector<char>> * create_table();
 				
-			std::string alpha = "josh";
-			std::string myPwd = "1b9y0s";
-			std::string password{ 0 };
-			std::map < Md5Digest, std::vector<char>> theMap;
+			//std::string alpha = "josh";
+			//std::string myPwd = "1b9y0s";
+			//std::string password{ 0 };
+			//std::map < Md5Digest, std::vector<char>> theMap;
 			
-			for (int i = 0; i < 11; i++)
-			{
-				Combinator c(alpha, (i));
-				while (c.has_next())
-				{
-					auto combo = c.next();
-					copy(myPwd.begin(), myPwd.end(), back_inserter(password));
+			//for (int i = 0; i < 11; i++)
+			//{
+				//Combinator c(alpha, (i));
+				//while (c.has_next())
+				//{
+					//auto combo = c.next();
+					//copy(myPwd.begin(), myPwd.end(), back_inserter(password));
 					//std::string password(combo.data() + myPwd);
-					theMap.emplace(compute_md5(password.c_str(), password.size()), combo);		
-				}
-			}
+					//theMap.emplace(compute_md5(password.c_str(), password.size()), combo);		
+				//}
+			//}
 			
 
 			//std::string inputString = (wstring_to_string(command_text)+myPwd);
