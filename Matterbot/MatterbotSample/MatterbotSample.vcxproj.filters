@@ -44,9 +44,6 @@
     <ClInclude Include="JokesCommand.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="KnockKnock.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Md5Utilities.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -60,6 +57,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ConvertToMd5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TryCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RivestmentScrap.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
