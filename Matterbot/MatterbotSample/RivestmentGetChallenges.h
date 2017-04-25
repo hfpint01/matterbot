@@ -13,7 +13,7 @@ namespace lospi
 	std::map < Md5Digest, std::vector<char>> theMap;
 	std::vector<std::string> challenges;
 
-	struct RivestmentGetChallanges : ICommand {
+	struct RivestmentGetChallanges : public ICommand {
 		
 		std::wstring get_name() override {
 			return L"challenges";

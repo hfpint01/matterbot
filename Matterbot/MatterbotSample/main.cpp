@@ -8,6 +8,7 @@
 #include "JokesCommand.h"
 #include "RivestmentCommands.h"
 #include "RivestmentGetChallenges.h"
+#include "RivestmentScraps.h"
 #include "Md5.h"
 #include "Md5Utilities.h"
 #include "ConvertToMd5.h"
@@ -36,10 +37,15 @@ int main()
 	bot->register_command(make_shared<JokesCommand>());
     bot->register_command(make_shared<RivestmentCommands>());
 	bot->register_command(make_shared<RivestmentGetChallanges>());
+	auto chl_ptr = make_shared<RivestmentGetChallanges>();
+	bot->register_command(chl_ptr);
+	bot->register_command(make_shared<ScrapsCommand>(chl_ptr));
+	
 	//bot->register_command(make_shared<ConvertToMd5>());
 	//bot->register_command(make_shared<ReverseCommand>(bot));
 	//bot->register_command(make_shared<EchoCommand>());
 	//bot->register_command(make_shared<WeatherCommand>());
+
 
     bot->post_message(welcome_message);
 

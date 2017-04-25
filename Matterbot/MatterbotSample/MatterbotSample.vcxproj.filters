@@ -62,7 +62,7 @@
     <ClInclude Include="TryCommand.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RivestmentScrap.h">
+    <ClInclude Include="RivestmentScraps.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
