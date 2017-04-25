@@ -5,20 +5,10 @@
 #include <vector>
 namespace lospi
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 	std::map < Md5Digest, std::vector<char>> theMap;
 	std::vector<std::string> challenges;
 
 	struct RivestmentGetChallanges : public ICommand {
-=======
-=======
->>>>>>> parent of 4d957e9... talking to rivestment with answers
-=======
->>>>>>> parent of 4d957e9... talking to rivestment with answers
-	struct RivestmentGetChallanges : ICommand {
->>>>>>> parent of 4d957e9... talking to rivestment with answers
 		
 		std::wstring get_name() override {
 			return L"challenges";
