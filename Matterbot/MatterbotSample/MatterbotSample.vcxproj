@@ -179,8 +179,11 @@
     <ClInclude Include="ReverseCommand.h" />
     <ClInclude Include="RivestmentGetChallenges.h" />
     <ClInclude Include="RivestmentCommands.h" />
+<<<<<<< HEAD
     <ClInclude Include="RivestmentScraps.h" />
     <ClInclude Include="TryCommand.h" />
+=======
+>>>>>>> parent of 4d957e9... talking to rivestment with answers
     <ClInclude Include="WeatherCommand.h" />
   </ItemGroup>
   <ItemGroup>

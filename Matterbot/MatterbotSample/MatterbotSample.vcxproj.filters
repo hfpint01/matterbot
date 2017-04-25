@@ -62,12 +62,15 @@
     <ClInclude Include="ConvertToMd5.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="TryCommand.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="RivestmentScraps.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+=======
+>>>>>>> parent of 4d957e9... talking to rivestment with answers
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
