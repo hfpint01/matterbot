@@ -64,12 +64,15 @@
     </ClInclude>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ClInclude Include="TryCommand.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="RivestmentScraps.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+=======
+>>>>>>> parent of 4d957e9... talking to rivestment with answers
 =======
 >>>>>>> parent of 4d957e9... talking to rivestment with answers
 =======
