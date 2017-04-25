@@ -1,12 +1,11 @@
 #pragma once
 #include "Matterbot.h"
-#include ""
 
 namespace lospi
 {
-	struct TryCommand : ICommand {
+	struct EchoCommand : ICommand {
 		std::wstring get_name() override {
-			return L"try";
+			return L"echo";
 		}
 
 		std::wstring get_help() override {
@@ -15,8 +14,6 @@ namespace lospi
 
 		std::wstring handle_command(const std::wstring &team, const std::wstring &channel,
 			const std::wstring &user, const std::wstring &command_text) override {
-
-			
 			return command_text;
 		}
 	};
