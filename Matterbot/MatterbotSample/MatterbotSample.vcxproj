@@ -173,17 +173,11 @@
     <ClInclude Include="EchoCommand.h" />
     <ClInclude Include="ConsoleLogger.h" />
     <ClInclude Include="JokesCommand.h" />
-    <ClInclude Include="KnockKnock.h" />
     <ClInclude Include="Md5.h" />
     <ClInclude Include="Md5Utilities.h" />
     <ClInclude Include="ReverseCommand.h" />
     <ClInclude Include="RivestmentGetChallenges.h" />
     <ClInclude Include="RivestmentCommands.h" />
-<<<<<<< HEAD
-    <ClInclude Include="RivestmentScraps.h" />
-    <ClInclude Include="TryCommand.h" />
-=======
->>>>>>> parent of 4d957e9... talking to rivestment with answers
     <ClInclude Include="WeatherCommand.h" />
   </ItemGroup>
   <ItemGroup>
