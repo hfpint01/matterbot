@@ -13,10 +13,13 @@ namespace lospi
 {
 
 	
-	struct ScrapsCommand : ICommand {
-		explicit ScrapsCommand(std::shared_ptr<RivestmentGetChallanges> challenges)
+	struct RivestmentScraps : ICommand {
+		explicit RivestmentScraps(std::shared_ptr<Matterbot> bot, std::shared_ptr<RivestmentGetChallanges> challenges)
+			
 		{
+			this->bot = bot;
 			this->challenges = challenges;
+
 		};
 
 		std::wstring get_name() override { return L"scraps"; }
@@ -30,9 +33,11 @@ namespace lospi
 			return challenges->handle_command(team, channel, user, command_text);
 
 		};
-	private:		
+	private:
+		std::shared_ptr<Matterbot> bot;
 		std::shared_ptr<RivestmentGetChallanges> challenges;
 
 	};
+	
 
 }

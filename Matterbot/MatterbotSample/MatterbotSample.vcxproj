@@ -178,6 +178,7 @@
     <ClInclude Include="ReverseCommand.h" />
     <ClInclude Include="RivestmentGetChallenges.h" />
     <ClInclude Include="RivestmentCommands.h" />
+    <ClInclude Include="RivestmentScraps.h" />
     <ClInclude Include="WeatherCommand.h" />
   </ItemGroup>
   <ItemGroup>

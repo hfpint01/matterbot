@@ -8,6 +8,7 @@
 #include "JokesCommand.h"
 #include "RivestmentCommands.h"
 #include "RivestmentGetChallenges.h"
+#include "RivestmentScraps.h"
 #include "Md5.h"
 #include "Md5Utilities.h"
 #include "ConvertToMd5.h"
@@ -30,8 +31,11 @@ int main()
     auto bot = make_shared<Matterbot>(mattermost_url, incoming_hook_route, outgoing_hook_route, outgoing_hook_token);
     bot->set_logger(make_unique<ConsoleLogger>());
 	bot->register_command(make_shared<JokesCommand>());
-    bot->register_command(make_shared<RivestmentCommands>(bot));
+    bot->register_command(make_shared<RivestmentCommands>());
 	bot->register_command(make_shared<RivestmentGetChallanges>(bot));
+	auto challenges_ptr = make_shared<RivestmentGetChallanges>(bot);
+	bot->register_command(challenges_ptr);
+	bot->register_command(make_shared<RivestmentScraps>(bot, challenges_ptr));
 	//bot->register_command(make_shared<ConvertToMd5>());
 	//bot->register_command(make_shared<ReverseCommand>(bot));
 	bot->register_command(make_shared<EchoCommand>());

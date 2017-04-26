@@ -59,6 +59,9 @@
     <ClInclude Include="ConvertToMd5.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="RivestmentScraps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

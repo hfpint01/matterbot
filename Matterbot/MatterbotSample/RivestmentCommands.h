@@ -7,7 +7,7 @@ namespace lospi
 {
 	int level = 0;
 	struct RivestmentCommands : ICommand {
-		explicit RivestmentCommands(std::shared_ptr<Matterbot> bot) : bot{ bot } {}
+		
 
 		std::wstring registration { 0 };
 		std::wstring get_name() override {
@@ -30,12 +30,17 @@ namespace lospi
 			}
 			else if (command_text == L"challenge")
 			{
-				return L"rivestment challenge 200";
+				return L"rivestment challenge 250";
 			}
 			else if (command_text == L"password")
 			{
 				return L"rivestment password";
 			}
+			else if (command_text == L"scraps")
+			{
+				return L"rivestment scraps 200";
+			}
+			//////////////////////////////////
 			else if (command_text == L"level 1")
 			{
 				return L"rivestment level 1";
@@ -50,12 +55,13 @@ namespace lospi
 			}
 			else if (command_text == L"level 4")
 			{
-				return L"I'm sorry. You've exceeded Izzy's capabilities.";
+				return L"rivestment level 4";
 			}
-			else if (command_text == L"scraps")
+			else if (command_text == L"level 5")
 			{
-				return L"rivestment scraps";
+				return L"I'm sorry. You've exceeded Izzy's laptop capabilities.";
 			}
+			////////////////////////////////
 			else if (command_text == L"quit")
 			{
 				return L"rivestment quit";
@@ -66,8 +72,5 @@ namespace lospi
 			}
 
 		}
-
-	private:
-		std::shared_ptr<Matterbot> bot;
 	};
 }
