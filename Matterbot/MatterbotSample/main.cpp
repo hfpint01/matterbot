@@ -47,10 +47,10 @@ int main()
 	std::map<Md5Digest, std::vector<char>> create_table();
 
 	std::string alpha = "josh";
-	std::string myPwd = "4gipc2";
+	std::string myPwd = "3x0zyc";
 	std::string password{ 0 };
 	
-	for (int i = 0; i < 11; i++)
+	for (int i = 0; i < 14; i++)
 	{
 		Combinator c(alpha, (i));
 		while (c.has_next())

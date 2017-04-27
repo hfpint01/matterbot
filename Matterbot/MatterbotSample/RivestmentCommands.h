@@ -15,7 +15,7 @@ namespace lospi
 		}
 
 		std::wstring get_help() override {
-			return L"`rivestment commands`";
+			return L"`rivestment`: `rivestment [CMD]`: \n`register`: Registers Izzy in the game.\n`challenge`: Grabs challenges from Rivestment, matches hashes and returns passwords to Rivestment.";
 		}
 
 		std::wstring handle_command(const std::wstring &team, const std::wstring &channel,
@@ -30,7 +30,7 @@ namespace lospi
 			}
 			else if (command_text == L"challenge")
 			{
-				return L"rivestment challenge";
+				return L"rivestment challenge 100";
 			}
 			else if (command_text == L"password")
 			{
@@ -38,7 +38,7 @@ namespace lospi
 			}
 			else if (command_text == L"scraps")
 			{
-				return L"rivestment scraps 250";
+				return L"rivestment scraps";
 			}
 			//////////////////////////////////
 			else if (command_text == L"level 1")

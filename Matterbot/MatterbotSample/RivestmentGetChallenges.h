@@ -21,7 +21,7 @@ namespace lospi
 
 		std::wstring get_help() override 
 		{
-			return L"`challenges`: This captures MD5's and stores them in an array.";
+			return L"`challenges`: This captures MD5's from Rivestment and stores them. It then compares hashes and returns a list of passwords.";
 		}
 
 		std::wstring handle_command(const std::wstring &team, const std::wstring &channel,
@@ -51,7 +51,7 @@ namespace lospi
 
 					_sleep(2000);
 
-					bot->post_message(L"rivestment challenge");
+					bot->post_message(L"rivestment challenge 100");
 
 					return L"";
 				}

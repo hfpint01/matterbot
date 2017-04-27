@@ -25,7 +25,7 @@ namespace lospi
 		std::wstring get_name() override { return L"scraps"; }
 
 
-		std::wstring get_help() override { return L"`scraps`: `scraps` loads the hashes and begins crunching."; }
+		std::wstring get_help() override { return L"`scraps`: `scraps` loads the challenges from the scrap pile and begins the challenge process."; }
 
 		std::wstring handle_command(const std::wstring& team, const std::wstring& channel,
 			const std::wstring& user, const std::wstring& command_text) override {
