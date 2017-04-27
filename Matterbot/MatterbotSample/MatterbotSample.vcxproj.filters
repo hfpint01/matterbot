@@ -50,13 +50,13 @@
     <ClInclude Include="Md5.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RivestmentGetChallenges.h">
+    <ClInclude Include="ConvertToMd5.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="RivestmentCommands.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ConvertToMd5.h">
+    <ClInclude Include="RivestmentGetChallenges.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="RivestmentScraps.h">

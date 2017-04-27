@@ -43,7 +43,7 @@ namespace lospi
 						newChallenges.push_back(item);
 					}
 
-					_sleep(2000);
+				
 
 					tryHashes();
 
@@ -51,7 +51,7 @@ namespace lospi
 
 					_sleep(2000);
 
-					bot->post_message(L"rivestment challenge 250");
+					bot->post_message(L"rivestment challenge");
 
 					return L"";
 				}

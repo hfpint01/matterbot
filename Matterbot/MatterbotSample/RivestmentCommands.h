@@ -30,7 +30,7 @@ namespace lospi
 			}
 			else if (command_text == L"challenge")
 			{
-				return L"rivestment challenge 250";
+				return L"rivestment challenge";
 			}
 			else if (command_text == L"password")
 			{
@@ -38,7 +38,7 @@ namespace lospi
 			}
 			else if (command_text == L"scraps")
 			{
-				return L"rivestment scraps 200";
+				return L"rivestment scraps 250";
 			}
 			//////////////////////////////////
 			else if (command_text == L"level 1")
